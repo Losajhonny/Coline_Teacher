@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-12-28T12:22:19
+# Project created by QtCreator 2018-12-26T12:02:49
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = olc2_proyecto2
+TARGET = proyecto_2_201325583
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -25,10 +25,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        principal.cpp \
+    parser.cpp \
+    scanner.cpp \
+    simbolo.cpp \
+    entorno.cpp \
+    nodo.cpp
 
 HEADERS += \
-        mainwindow.h
+        principal.h \
+    parser.h \
+    scanner.h \
+    simbolo.h \
+    entorno.h \
+    nodo.h
 
 FORMS += \
-        mainwindow.ui
+        principal.ui
+
+DISTFILES += \
+    lexico_cn.l \
+    sintactico_cn.y
