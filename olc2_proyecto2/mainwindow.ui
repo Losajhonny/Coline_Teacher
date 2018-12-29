@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>principal</class>
- <widget class="QMainWindow" name="principal">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>729</width>
+    <height>533</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>principal</string>
+   <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTextEdit" name="txt_edit">
@@ -19,22 +19,22 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>251</width>
-      <height>141</height>
+      <width>711</width>
+      <height>411</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_compilar">
+   <widget class="QPushButton" name="btn_compile">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>200</y>
+      <x>40</x>
+      <y>440</y>
       <width>89</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>Compilar</string>
+     <string>Compile</string>
     </property>
    </widget>
   </widget>
@@ -43,7 +43,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>729</width>
      <height>22</height>
     </rect>
    </property>

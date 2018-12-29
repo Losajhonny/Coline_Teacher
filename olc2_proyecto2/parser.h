@@ -45,56 +45,98 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    tk_mas = 258,
-    tk_menos = 259,
-    tk_por = 260,
-    tk_div = 261,
-    tk_pot = 262,
-    pari = 263,
-    pard = 264,
-    llai = 265,
-    llad = 266,
-    dospuntos = 267,
-    igual = 268,
-    ptcoma = 269,
-    pr_selecciona = 270,
-    pr_caso = 271,
-    pr_default = 272,
-    pr_mientras = 273,
-    pr_hacer = 274,
-    pr_para = 275,
-    pr_entero = 276,
-    pr_decimal = 277,
-    pr_booleano = 278,
-    pr_caracter = 279,
-    pr_cadena = 280,
-    pr_vacio = 281,
-    pr_imprimir = 282,
-    pr_verdadero = 283,
-    pr_falso = 284,
-    entero = 285,
-    decimal = 286,
-    caracter = 287,
-    cadena = 288,
-    id = 289
+    caracter_nulo = 258,
+    pr_entero = 259,
+    pr_decimal = 260,
+    pr_caracter = 261,
+    pr_cadena = 262,
+    pr_booleano = 263,
+    pr_nada = 264,
+    pr_tamanio = 265,
+    pr_concatenar = 266,
+    pr_convertiracadena = 267,
+    pr_convertiraentero = 268,
+    pr_clase = 269,
+    pr_este = 270,
+    pr_publico = 271,
+    pr_protegido = 272,
+    pr_privado = 273,
+    pr_hereda_de = 274,
+    pr_sobrescribir = 275,
+    pr_principal = 276,
+    pr_importar = 277,
+    pr_nuevo = 278,
+    pr_vacio = 279,
+    pr_imprimir = 280,
+    pr_detener = 281,
+    pr_continuar = 282,
+    pr_retornar = 283,
+    pr_si = 284,
+    pr_sino = 285,
+    pr_selecciona = 286,
+    pr_caso = 287,
+    pr_default = 288,
+    pr_mientras = 289,
+    pr_hacer = 290,
+    pr_para = 291,
+    pr_lista = 292,
+    pr_insertar = 293,
+    pr_obtener = 294,
+    pr_buscar = 295,
+    pr_pila = 296,
+    pr_apilar = 297,
+    pr_desapilar = 298,
+    pr_cola = 299,
+    pr_encolar = 300,
+    pr_desencolar = 301,
+    pr_mostraredd = 302,
+    pr_leerteclado = 303,
+    pr_verdadero = 304,
+    pr_falso = 305,
+    entero = 306,
+    decimal = 307,
+    caracter = 308,
+    cadena = 309,
+    id = 310,
+    pari = 311,
+    pard = 312,
+    cori = 313,
+    cord = 314,
+    llai = 315,
+    llad = 316,
+    ptcoma = 317,
+    dospuntos = 318,
+    punto = 319,
+    coma = 320,
+    interr = 321,
+    tk_igual = 322,
+    tk_masigual = 323,
+    tk_menigual = 324,
+    tk_porigual = 325,
+    tk_divigual = 326,
+    tk_mas = 327,
+    tk_menos = 328,
+    tk_por = 329,
+    tk_div = 330,
+    tk_pot = 331,
+    tk_masmas = 332,
+    tk_menmen = 333,
+    tk_mayor = 334,
+    tk_menor = 335,
+    tk_mayorigual = 336,
+    tk_menorigual = 337,
+    tk_igualigual = 338,
+    tk_diferente = 339,
+    tk_or = 340,
+    tk_and = 341,
+    tk_not = 342,
+    NEG = 343
   };
 #endif
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-
-union YYSTYPE
-{
-#line 20 "sintactico_cn.y" /* yacc.c:1909  */
-
-int INTEGER;
-char TEXT [256];
-struct Nodo *NODE;
-
-#line 95 "parser.h" /* yacc.c:1909  */
-};
-
-typedef union YYSTYPE YYSTYPE;
+typedef int YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
